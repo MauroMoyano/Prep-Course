@@ -1,0 +1,5 @@
+1. Variables: Las variables son cajas contenedoras de datos donde podemos almacenar numeros, string o valores booleanos.
+2. String: son concatenaciones de caracteres, osea desde una letra hasta la cantidad que necesites almacenar en la variable. Los numeros serán tenidos en cuenta como si fueran una letra.
+3. Funciones: Las funciones son lineas de codigo que se usan para resolver algo, se las define para utilizarlas mas de una vez en el codigo y retornan valor despues de ser llamadas. Osea cumplen una funcion.
+4. Declaraciones if: el if es un condicional que sirve para definir el flujo del codigo. Si se cumple una condicion el flujo del programa toma un camino, sino toma otro. Se pueden anidar los if´s.
+5 Valores Booleanos: cuando se retorna un valor booleano puede tener dos estados true (Verdadero) o False (Falso), esto nos sirve para usarlo en cirtas ocaciones que solo hacen falta dos resultados para luego comparar. Nos simplifica y permite eliminar errores al no hacerlo con otro tipo de datos.
