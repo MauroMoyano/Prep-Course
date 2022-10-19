@@ -143,7 +143,11 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-
+  var producto = 1;
+  if(arguments.length < 1) return 0;
+  for(i = 0 ; i < arguments.length ; i++){
+    producto = producto * arguments[i];
+  }return producto;
 }
 
 
@@ -285,8 +289,17 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-  //pueba de commit
-  // pueba 2
+  var auxa = [];
+  for(i = 0 ; i < 10 ; i++){
+    if(i != 5) {
+      numero = numero + 2 ;
+      auxa.push(numero) ;  
+      }else {
+        continue;
+      }
+    
+  
+  } return auxa;
 }
 
 
