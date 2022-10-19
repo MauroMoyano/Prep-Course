@@ -1,0 +1,1 @@
+Un Array, es una lista de datos ordenados. Puede contener cualquier tipo de datos dentro y no es un tipo de datos nativo sino una construccion.

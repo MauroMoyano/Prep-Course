@@ -3,18 +3,27 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  /*var pos1 = null;
+  pos1 = array[0];
+  return pos1;
+  */
+ return array[0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  return array[array.length - 1];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  var largo = null;
+  largo = array.length;
+  return largo;
 }
 
 
@@ -23,6 +32,19 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  /*i = 0;
+  do {
+    array[i] = array[i] + 1;
+    i++;
+  } while(array.length > i)
+  return array;
+  */
+ var largo = null;
+ largo = array.length
+ for(i = 0 ; largo > i ; i++){
+  array[i] = array[i] + 1;
+ }
+ return array
 }
 
 
@@ -30,6 +52,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  array.push(elemento);
+  return array;
 }
 
 
@@ -38,6 +62,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -47,6 +73,14 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  var cadena = ''; 
+  for(i = 0 ; palabras.length > i ; i++){
+    if(i != 0){
+      cadena = cadena + ' ' + palabras[i];  
+    }else {
+      cadena = cadena + palabras[i];
+    }
+  }return cadena;
 }
 
 
@@ -54,6 +88,13 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  var bandera = false;
+  for(i = 0 ; array.length > i ; i++){
+    if(array[i] === elemento){
+      bandera = true;
+    }
+  }
+  return bandera;
 }
 
 
@@ -61,6 +102,11 @@ function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
   // Tu código:
+    var suma = null;
+    for(i = 0; numeros.length > i ; i++){
+      suma = suma + numeros[i];
+    }
+    return suma;
 }
 
 
@@ -68,6 +114,13 @@ function promedioResultadosTest(resultadosTest) {
   // "resultadosTest" debe ser una matriz de enteros (int/integers)
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
+  var suma = null;
+  var prom = null;
+  for(i = 0 ; resultadosTest.length > i ; i++){
+    suma = suma + resultadosTest[i];
+  }
+  prom = suma / resultadosTest.length;
+  return prom;
 }
 
 
