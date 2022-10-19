@@ -286,6 +286,7 @@ function continueStatement(numero) {
   //Pista: usá el statement 'continue'
   // Tu código:
   //pueba de commit
+  // pueba 2
 }
 
 
