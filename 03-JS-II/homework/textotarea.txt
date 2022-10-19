@@ -1,0 +1,7 @@
+For: El bucle for sirve para repetir unas lineas de codigo una cantidad determinada de veces.
+
+&& son los simbolos para decir "y" al interprete. Mas coloquialmente se diria para sumar condiciones en una expresion. Para que las dos expresiones o mas, sean tenidas en cuenta antes de devolver el valor booleano.
+
+|| son los simbolos para decir "o" al interprete. Mas coloquialmente se diria para evaluar una u otra expreccion, a diferencia del && el || solo necesita que una de todas las condiciones evaluadas sea verdadera para devolver el valor booleano.
+
+! Sirve para negar, lo que hace es cambiar el valor booleano de lo que preceda, osea que cuando lo ponemos antes de otro simbolo, lo que hacemos es negar el simbolo e invertir su significado, por ej. " === significa igual" y "!= significa distinto"
