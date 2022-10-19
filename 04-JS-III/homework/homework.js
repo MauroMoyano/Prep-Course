@@ -143,13 +143,17 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+
 }
 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
-
+  var cont = 0;
+  for(i = 0 ; arreglo.length > i ; i++){
+    if(arreglo[i] > 18) cont++;
+  }return cont;
 }
 
 
@@ -158,7 +162,11 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  
+  if(numeroDeDia === 1 || numeroDeDia === 7){
+    return 'Es fin de semana';
+  }else{
+    return 'Es dia Laboral';
+  }
 } 
 
 
@@ -166,7 +174,21 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  
+ /* var prueba = '';
+  prueba = n;
+  if(prueba[0] == 9){
+    return true;
+  }else{
+    return false;
+  }
+  */
+ var aux = '';
+ aux = String(n)[0];
+ if(aux === '9'){
+  return true;
+ } else{
+  return false;
+ }
 }
 
 
@@ -174,7 +196,14 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
-  
+  var auxiliar = arreglo[0];
+  for(i = 0 ; arreglo.length > i ; i++){
+    if(auxiliar === arreglo[i]){
+      bandera = true;
+    }else{
+      return false;
+    }
+  }return true;
 } 
 
 
@@ -183,6 +212,25 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  var cont = 0;
+  var meses = [];
+  for(i = 0 ; array.length > i ; i++){
+    if(array[i] === 'Enero'){
+      meses[cont] = array[i];
+      cont++;
+    }else if(array[i] === 'Marzo'){
+      meses[cont] = array[i];
+      cont++;
+    }else if(array[i] === 'Noviembre'){
+      meses[cont] = array[i];
+      cont++;
+    }
+  } if(cont === 3){
+    return meses;
+  } else {
+    return 'No se encontraron los meses pedidos'
+  }
+  // Si se pone dos veces el mismo mes igual pasa por valido el codigo, asi que se podria agregar un for para comprobar que el nuevo arreglo contenga todos lo meses pedidos y de ahi dar el return
 }
 
 
@@ -190,6 +238,13 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  var arregloaux = [];
+  for(i =0 ; array.length > i ; i++){
+    if(array[i] > 100){
+      arregloaux.push(array[i]);
+    }
+  }return arregloaux;
+  //Empiezo a usar push y ya no  amanejar indices para asignar valor a el nuevo arreglo
 }
 
 
@@ -201,8 +256,27 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  /*var auxa = [];
+  for(i = 0 ; i < 10 ; i++){
+    numero = numero + 2 ;
+    auxa.push(numero) ;
+    if(numero === (i + 1)) return 'Se interrumpió la ejecución' //break;
+  } if(i = 10){
+    return auxa;
+  }*/
+  //lo de arriba funciona pero no con brake
+  var auxa = [];
+  for(i = 0 ; i < 10 ; i++){
+    numero = numero + 2 ;
+    auxa.push(numero) ;
+    if(numero === (i + 1)) break;// return 'Se interrumpió la ejecución' //break;
+  
+  } if(i != 10){
+    return 'Se interrumpió la ejecución';
+  }else {
+    return auxa;
+  }
 }
-
 
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
