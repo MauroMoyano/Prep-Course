@@ -1,0 +1,2 @@
+el prototype seria la clase de doonde se heredan propiedades y metodos los objetos creados. Segun el tipo de objeto sera objeto hijo de cierto prototype
+los constructores de clases son como una plantilla para crear el objeto de determinada manera a partir de los parametros recibidos o default
