@@ -1,0 +1,17 @@
+h1{
+    color: red;
+}
+img{
+    width: 400px;
+}
+#thirDiv{
+    background-color: purple;
+    height: 558px;
+    width: 600px;
+    padding: 50px;
+    border: 10px solid black;
+}
+#spanId{
+    font-size: 18px;
+    margin: 50px;
+}
