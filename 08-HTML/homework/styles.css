@@ -2,16 +2,41 @@ h1{
     color: red;
 }
 img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
 }
 #thirDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     background-color: purple;
-    height: 558px;
-    width: 600px;
-    padding: 50px;
+    height: auto;
+    width: auto;
+    padding: auto;
     border: 10px solid black;
+    
 }
 #spanId{
     font-size: 18px;
     margin: 50px;
+}
+div{
+    background-color: white;
+    height: 200px;
+    max-width: auto;
+    padding: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
